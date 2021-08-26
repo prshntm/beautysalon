@@ -1,0 +1,13 @@
+/*спецификация - набор css правил для всех блоков на странице и сайте*/
+.body
+{
+	font-family: 'Myriad Pro', sans-serif;
+}
+.header
+{
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 40px;
+	background-color: 000000;
+	color: ffffff;
+
+}

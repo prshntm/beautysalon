@@ -1,0 +1,558 @@
+.body
+{
+	font-family: 'PT Sans', Arial, sans-serif;
+	padding: 10px;
+	margin-top: 10%;
+	overflow-x: hidden;
+	-webkit-text-size-adjust : none;
+    text-size-adjust         : none;
+}
+
+/*Заголовки*/
+.h1
+{
+	size: 60px;
+	text-align: center;
+}
+.h2
+{
+	size: 48px;
+	text-align: center;
+}
+.h3, .legend
+{
+	size: 36px;
+}
+.h4, .label
+{
+	size: 30px;
+}
+.h5
+{
+	font-size: 21px;
+}
+
+/*Обычный текст*/
+.p
+{
+	size: 20px;
+}
+
+/*Выделение второго слова в заголовках первого уровня*/
+.colortext
+{
+	color: #8f1717;
+}
+
+/*окно для отзывов*/
+.form-wrap
+{
+	width: 550px;
+}
+.feedback
+{
+	width: 240px;
+	/*float: left;*/
+	text-align: left;
+}
+form
+{
+	/*float: left;*/
+	text-align: left;
+	width: (100%-240px);
+}
+form div
+{
+	margin-top: 10%;
+	position: relative;
+}
+input[type="text"]
+{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+	outline: none;
+	height: 30px;
+}
+input[type="text"]:focus
+{
+	box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+
+/*Кнопки*/
+button
+{
+	width: 110px;
+	height: 30px;
+	background-color: #8f1717;
+	color: #ffffff;
+	border-width: 0;
+	outline: none;
+}
+button:hover
+{
+	background-color: #cc0000;
+}
+
+/*Шапка*/
+@media (max-width:  600px) {
+		.menu__item a {
+			font-size: 10px;
+		}
+	}
+.header
+{
+	
+	font-family: 'Myriad Pro', Arial, sans-serif;
+	background-color: #000000;
+	height: 8%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.main
+{
+	margin: 0;
+    min-height: 100%;
+    display: flex;
+}
+.container
+{
+	padding: 8%;
+	width: 100%;
+	overflow-x: hidden;
+}
+img .logo
+{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top: 0;
+}
+/*.col-lg-3 img
+{
+	float: left;
+	width: auto;
+	height: 100%;
+	position: absolute;
+}*/
+ul, li
+{
+	display: block;
+	padding: 0;
+	margin: 0;
+
+}
+.menu
+{
+	top: 0;
+	margin-left: 20%;
+	position: absolute;
+}
+.menu__item
+{
+	margin: 5%; /*отступы между ссылками*/
+}
+.menu__item a
+{
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*Подвал*/
+.footer
+{
+	font-family: 'Myriad Pro', sans-serif;
+	background-color: #000000;
+	height: 8%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.footer__item
+{
+	margin: 2%; /*отступы между ссылками*/
+}
+.col-lg-3 p
+{
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: center;
+}
+
+/*портфолио*/
+.thumb img
+{
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+/*.thumb img:hover
+{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}*/
+
+.thumb
+{
+    padding: 5px;
+}
+
+/*Картинка в прайс-листе*/
+.servicelistpic
+{
+	width: 320px;
+	height: 400px;
+	position: relative;
+}
+
+/*Боковое меню на странице онлайн-записи*/
+.sidemenu ul, li
+{
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.sidemenu
+{
+	margin-left: 10%;
+	position: relative;
+	align-items: center;
+	list-style: none;
+}
+.sidemenu__item
+{
+	border-width: thin;
+	border-style: solid;
+	border-color: #000000; 
+	padding: 5%;
+	margin: 2%; /*отступы между ссылками*/
+}
+.sidemenu__item a
+{
+	font-size: 18px;
+	color: #000000;
+	font-weight: 600;
+	text-decoration: none;
+}
+.sidemenu__item ul
+{
+	border-color: #808080; 
+	padding: 2%;
+	margin: 1%; /*отступы между ссылками*/
+	font-size: 14px;
+	color: #696969;
+	font-weight: 400;
+	text-decoration: none;
+
+}
+.sidemenu__level2
+{
+	border-width: thin;
+	display: none;
+	border-style: solid;
+	border-color: #696969; 
+	padding: 2%;
+	margin: 1%; /*отступы между ссылками*/
+}
+.sidemenu__level2 a
+{
+	font-size: 14px;
+	color: #808080;
+	font-weight: 400;
+	text-decoration: none;
+}
+.level2.active
+{
+	display: block !important;
+}
+
+.select-arrow:checked
+{
+	cursor: pointer;
+	position: relative;
+	margin-top: 10px;
+	border-color: #444444 transparent transparent transparent;
+	border-style: solid;
+	border-width: 10px 7px 0 7px;
+	-moz-transform: rotate(270deg); /* Для Firefox */
+    -ms-transform: rotate(270deg); /* Для IE */
+    -webkit-transform: rotate(270deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(270deg); /* Для Opera */
+    transform: rotate(270deg);
+    float: right;
+}
+
+/*Фотография мастера на странице записи к мастеру*/
+.workerpic img
+{
+	width: 100%;
+	height: auto;
+	border-color: transparent;
+	border-style: solid;
+	margin-left: 15%;
+	margin-top: -5%;
+	border-radius: 50%;
+}
+
+/*Форма авторизации и форма личного кабинета*/
+.form-wrap-authorize input[type="email"], input[type="password"], .form-wrap-personal input[type="email"], input[type="password"], input[type="text"]
+{
+	width: 100%;
+	margin-left: 0%;
+}
+.form-wrap-authorize input[type="email"]:focus, input[type="password"]:focus, .form-wrap-personal input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus
+{
+	box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.form-wrap-authorize label, .form-wrap-personal label
+{
+	display: block;
+	text-align: center;
+	position: relative;
+}
+.form-wrap-authorize, .form-wrap-personal
+{
+	width: 550px;
+	justify-content: center;
+	margin-top: 50px;
+}
+.form-wrap-authorize button, .form-wrap-personal button, .button__portfolio button
+{
+	width: auto;
+	height: 30px;
+	background-color: #8f1717;
+	color: #ffffff;
+	border-width: 0;
+	outline: none;
+	display: inline-block;
+}
+.form-wrap-authorize p
+{
+	text-align: center;
+	position: relative;
+}
+.button__authorize, .button__signup, .button__savechanges, .button__portfolio
+{
+	justify-content: center;
+	display: flex;
+}
+fieldset
+{
+	border-color: #808080;
+	border-style: solid;
+}
+
+/*мастера на главной*/
+
+.container-fluid {
+    
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Thumbnail Box */
+
+.caption h4 {
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    padding-top: 2px;
+    line-height: 0.5;
+    }
+.caption p {
+    font-size: 0.75rem;
+    color: #999;
+    margin-left: 10px;
+    height: 80px;
+    }
+.btn.btn-mini {
+    font-size: 0.63rem;
+    }
+.caption h6
+{
+	margin-top: 2px;
+	font-weight: normal;
+	padding-top: 2px;
+	line-height: 0.7;
+}
+.control-box {
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+    position: static;
+    }
+    .carousel-control{
+        background: #8f1717;
+        border: 0px;
+        border-radius: 0px;
+        display: inline-block;
+        font-size: 34px;
+        font-weight: 200;
+        line-height: 18px;
+        opacity: 0.5;
+        padding: 4px 10px 0px;
+        position: static;
+        height: 30px;
+        width: 15px;
+        text-decoration: none;
+        text-align: center;
+        }
+
+        /* Mobile Only */
+        @media (max-width: 767px) {
+            .page-header, .control-box {
+            text-align: center;
+            } 
+        }
+        @media (max-width: 479px) {
+            .caption {
+            word-break: break-all;
+            }
+        }
+.span12 {
+	margin-top: 5%;
+}
+.staff__pic img {
+	width: 100%;
+    height: auto;
+}
+.thumbnail {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin-left: 90px;
+}
+
+/*Сообщения об ошибках*/
+.invalid-feedback {
+		width: 120%;
+		position: relative;
+	}
+
+
+/*боковое меню*/
+.vertmenu {
+margin: 0 20px;   
+}
+.vertmenu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.vertmenu ul li {
+position: relative;
+margin: 0;
+line-height: 30px; 
+border-width: thin;
+	border-style: solid;
+	border-color: #000000; 
+	padding: 5%;
+	margin: 2%; /*отступы между ссылками*/ 
+}
+.vertmenu ul li li {
+padding-left:20px;
+}
+.vertmenu .subCat, .chka {
+top: 0;
+right: 0px;
+position: absolute;
+cursor: pointer;
+}
+.vertmenu .subCat.plus,
+.chka:before,
+.vertmenu .subCat.minus,
+.subCat:checked + .chka:before {
+	content: '+';
+	font-size: 30px;
+	color: #000000;
+	font-weight: bold;
+	text-align: right;
+}
+.vertmenu .subCat.minus, .subCat:checked + .chka:before {
+content: '-';
+}
+.vertmenu a {
+color: #000000;
+font-size: 16px;
+font-weight:bold;
+text-decoration:none;
+}
+.vertmenu ul li li a {
+color: #666;
+font-size: 15px;
+font-weight:normal;
+text-decoration:none;
+}
+.vertmenu a.active {
+color: #800000;
+}
+.vertmenu a:hover {
+text-decoration: none;
+color: #000 !important;
+}
+.vertmenu > ul > li ul {
+display: none;
+}
+.vertmenu > ul > li a.active + span + ul {
+display: block !important;
+}
+.vertmenu > ul > li .subCat:checked ~ ul {
+display: block !important;
+}
+.vertmenu input[type=checkbox].subCat {
+display:none;
+}
+.vertmenu ul li li a:before {
+content: '\203A';
+font-size: 20px;
+padding-right: 6px;
+color: #666;
+font-weight: bold;
+}
+.vertmenu > ul li li a:hover:before {
+color: #1266B1;
+}
+.back
+{
+	width: 100%;
+	position: relative;
+	
+}
+button a, button a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	line-height: 1.1;
+}
+th {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+ td {
+ 	font-size: 0.8em;
+ 	padding: 5px 7px;
+	border: 1px solid #000;
+}
+.modify button
+{
+	background-color: #006400;
+}
+.modify button:hover
+{
+	background-color: #32CD32;
+}
